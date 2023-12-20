@@ -151,7 +151,7 @@ body {
     z-index: 1;
     width: 100%;
     border-radius: 5px;
-    max-height: 80vh;
+    max-height: 40vh;
     overflow-y: auto;
   }
 
@@ -175,7 +175,7 @@ body {
     color: #ffffff;
   }
 
-  .customDropdown:hover .dropdownContent {
+  .openDropdown .dropdownContent {
     display: block;
   }
 

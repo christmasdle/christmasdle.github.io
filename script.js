@@ -15,7 +15,15 @@ function createSnowflake() {
     dropdown.textContent = option.textContent;
   }
   // main script for guess the song
-
+  document.addEventListener('DOMContentLoaded', function() {
+    var customDropdown = document.querySelector('.customDropdown');
+  
+    // Toggle the "openDropdown" class on click
+    customDropdown.addEventListener('click', function() {
+      this.classList.toggle('openDropdown');
+    });
+  });
+  
 document.addEventListener('DOMContentLoaded', function() {
     // setting up the audio player
     var audio = document.getElementById('audioPlayer');
