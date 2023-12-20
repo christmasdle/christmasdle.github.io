@@ -19,22 +19,22 @@ body {
   }
   
   h1 {
-    color: #ffffff; /* White text color */
+    color: #ffffff;
     font-size: 3em;
     margin-bottom: 20px;
     font-family: 'cursive';
   }
 
   h3 {
-    color: #ffffff; /* White text color */
+    color: #ffffff;
     font-family: 'cursive';
   }
   
   #button {
     padding: 15px 30px;
     font-size: 1.5em;
-    background-color: #2ecc71; /* Green button color */
-    color: #ffffff; /* White text color */
+    background-color: #2ecc71;
+    color: #ffffff;
     text-decoration: none;
     border: none;
     cursor: pointer;
@@ -53,7 +53,7 @@ body {
   
   .snowflake {
     position: absolute;
-    color: #ffffff; /* White snowflake color */
+    color: #ffffff;
     font-size: 1em;
     line-height: 1em;
     z-index: 1;
@@ -151,8 +151,8 @@ body {
     z-index: 1;
     width: 100%;
     border-radius: 5px;
-    max-height: 200px; /* Set the maximum height */
-    overflow-y: auto; /* Enable vertical scrollbar if needed */
+    max-height: 250px;
+    overflow-y: auto;
   }
 
   .dropdownContent a {
@@ -175,7 +175,6 @@ body {
     color: #ffffff;
   }
 
-  /* Show the dropdown content when the dropdown button is hovered over */
   .customDropdown:hover .dropdownContent {
     display: block;
   }

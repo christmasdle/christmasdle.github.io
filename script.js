@@ -1,4 +1,3 @@
-// creates snowflakes for title screen
 function createSnowflake() {
     const snowflake = document.createElement('div');
     snowflake.className = 'snowflake';
