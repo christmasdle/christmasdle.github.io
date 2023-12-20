@@ -1,0 +1,181 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+
+body {
+    background-image: linear-gradient(to bottom left, #196da5, #60a3cf);
+  }
+  
+  #container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    position: relative;
+    z-index: 2;
+  }
+  
+  h1 {
+    color: #ffffff; /* White text color */
+    font-size: 3em;
+    margin-bottom: 20px;
+    font-family: 'cursive';
+  }
+
+  h3 {
+    color: #ffffff; /* White text color */
+    font-family: 'cursive';
+  }
+  
+  #button {
+    padding: 15px 30px;
+    font-size: 1.5em;
+    background-color: #2ecc71; /* Green button color */
+    color: #ffffff; /* White text color */
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    z-index: 2;
+  }
+  
+  #snowflakes {
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .snowflake {
+    position: absolute;
+    color: #ffffff; /* White snowflake color */
+    font-size: 1em;
+    line-height: 1em;
+    z-index: 1;
+  }
+
+  
+  #container.play-container {
+    height: 20vh;
+  }
+
+  #container.audio-container {
+    height: 50vh
+  }
+  
+  #container.select-container {
+    height: 0vh
+  }
+
+  #audioContainer {
+    text-align: center;
+  }
+
+  .controlButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+  }
+
+  #startButton {
+    background-color: #3498db;
+    color: #ffffff;
+  }
+
+  #pauseButton {
+    background-color: #e74c3c;
+    color: #ffffff;
+  }
+
+  #restartButton {
+    background-color: #2ecc71;
+    color: #ffffff;
+  }
+
+  #volumeDial {
+    margin-top: 20px;
+    width: 100px;
+  }
+
+  #songDropdown {
+    font-size: 14px;
+  }
+
+  #submitBtn {
+    color: #3498db;
+    background-color: white;
+  }
+
+  #textBox {
+    margin-top: 10px;
+    width: 200px;
+    font-size: 14px;
+    background-color: transparent;
+    border: none;
+  }
+  
+  #timeBox {
+    margin-top: 20px;
+  }
+
+  .customDropdown {
+    position: relative;
+    display: inline-block;
+    width: 200px;
+  }
+
+  .dropdownButton {
+    background-color: #ffffff;
+    color: #3498db;
+    border: 1px solid #3498db;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+    text-align: left;
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  .dropdownContent {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    width: 100%;
+    border-radius: 5px;
+    max-height: 200px; /* Set the maximum height */
+    overflow-y: auto; /* Enable vertical scrollbar if needed */
+  }
+
+  .dropdownContent a {
+    color: #3498db;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  .selectedOption {
+    color: #3498db;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+
+  .dropdownContent a:hover {
+    background-color: #3498db;
+    color: #ffffff;
+  }
+
+  /* Show the dropdown content when the dropdown button is hovered over */
+  .customDropdown:hover .dropdownContent {
+    display: block;
+  }

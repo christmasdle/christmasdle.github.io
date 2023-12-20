@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Play Page</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="snowflakes"></div>
+  <div id="container" class="play-container">
+    <h1>Christmasdle</h1>
+    <h3 id="streak">Streak: 0</h3>
+  </div>
+  <div id="container" class="audio-container">
+    <div id="audioContainer">
+        <button id="restartButton" class="controlButton">Start</button>
+        <input type="range" id="volumeDial" min="0" max="1" step="0.1" value="1">
+        <audio id="audioPlayer" type="audio/mp3"></audio>
+      </div>
+      <h3 id="timeBox"></h3>
+  </div>
+  <div id="container" class="select-container">
+    <div class="customDropdown" id="songDropdown">
+        <div class="dropdownButton" id="dropdown">Select a Song</div>
+        <div class="dropdownContent">
+          <a onclick="selectOption(this)">All I Want For Christmas Is You</a>
+          <a onclick="selectOption(this)">Feliz Navidad</a>
+          <a onclick="selectOption(this)">Frosty The Snowman</a>
+          <a onclick="selectOption(this)">Here Comes Santa Claus</a>
+          <a onclick="selectOption(this)">Holly Jolly Christmas</a>
+          <a onclick="selectOption(this)">Its Beginning to Look a Lot Like Christmas</a>
+          <a onclick="selectOption(this)">Jingle Bell Rock</a>
+          <a onclick="selectOption(this)">Last Christmas</a>
+          <a onclick="selectOption(this)">Let it Snow</a>
+          <a onclick="selectOption(this)">Mistletoe</a>
+          <a onclick="selectOption(this)">Rockin Around the Christmas Tree</a>
+          <a onclick="selectOption(this)">Rudolph The Red Nosed Reindeer</a>
+          <a onclick="selectOption(this)">Santa Tell Me</a>
+          <a onclick="selectOption(this)">Snowman</a>
+          <a onclick="selectOption(this)">Underneath The Tree</a>
+          <a onclick="selectOption(this)">Wonderful Christmas Time</a>
+        </div>
+      </div>
+      <button id="submitBtn" class="controlButton">Submit</button>
+  
+      <h3 type="text" id="textBox"></h3>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
