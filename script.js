@@ -55,7 +55,10 @@ document.addEventListener('DOMContentLoaded', function() {
         audio.src = setSong;
 
         audio.addEventListener('loadedmetadata', function() {
-            storedStartTime = localStorage.getItem('audioStartTime') || Math.random() * audio.duration * 0.8;
+            storedStartTime = Math.random() * audio.duration * 0.8;
+            if (storedStartTime < 10) { 
+              storedStartTime += 10;
+            }
             audio.currentTime = storedStartTime;
     });
     }
