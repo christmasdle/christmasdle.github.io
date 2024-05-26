@@ -1,7 +1,9 @@
 body, html {
-  height: 100%;
+  height: 100vh;
   margin: 0;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
 }
 
 body {
@@ -12,11 +14,42 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    height: 100vh;
+    justify-content: flex-end;
+    padding-top: 10vh;
+    height: 10vh;
     position: relative;
     z-index: 2;
   }
+
+  #containerButton {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 10vh;
+    height: 25vh;
+    position: relative;
+    z-index: 2;
+  }
+
+  #container2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 20vh;
+    position: relative;
+    background-color: rgba(96, 96, 96, 0.75);
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    z-index: 2;
+    width: 50vh;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-size:20px;
+    color: white;
+  }
+
   
   h1 {
     color: #ffffff;
@@ -25,21 +58,35 @@ body {
     font-family: 'cursive';
   }
 
+  pre {
+    font-family: inherit; /* Inherit font from the parent element */
+  }
+
   h3 {
     color: #ffffff;
     font-family: 'cursive';
   }
   
   #button {
-    padding: 15px 30px;
+    padding: 15px 20px;
     font-size: 1.5em;
-    background-color: #2ecc71;
-    color: #ffffff;
+    border: black;
+    border: 10vh;
+    background-color: #fbfbfb;
+    color: #000000;
     text-decoration: none;
     border: none;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 10px;
     z-index: 2;
+    transition: background-color 0.3s ease;
+    margin: 1vh;
+    width:400px;
+    text-align: center;
+  }
+
+  #button:hover {
+    background-color: #959595; /* Background color when hovered */
   }
   
   #snowflakes {
@@ -61,15 +108,15 @@ body {
 
   
   #container.play-container {
-    height: 20vh;
+    height: 30vh;
   }
 
   #container.audio-container {
-    height: 50vh
+    height: 0vh
   }
   
   #container.select-container {
-    height: 0vh
+    height: 10vh
   }
 
   #audioContainer {
