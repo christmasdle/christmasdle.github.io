@@ -15,8 +15,8 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: flex-end;
-    padding-top: 10vh;
-    height: 10vh;
+    padding-top: 30%;
+    height: 10%;
     position: relative;
     z-index: 2;
   }
@@ -26,8 +26,8 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    padding-top: 10vh;
-    height: 25vh;
+    padding-top: 20%;
+    height: 25%;
     position: relative;
     z-index: 2;
   }
@@ -37,7 +37,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 20vh;
+    height: 20%;
     position: relative;
     background-color: rgba(96, 96, 96, 0.75);
     border: 1px solid #ccc;
@@ -49,6 +49,7 @@ body {
     font-size:20px;
     color: white;
   }
+  
 
   
   h1 {
@@ -112,11 +113,11 @@ body {
   }
 
   #container.audio-container {
-    height: 0vh
+    height: 10%
   }
   
   #container.select-container {
-    height: 10vh
+    height: 10%
   }
 
   #audioContainer {
@@ -198,7 +199,7 @@ body {
     z-index: 1;
     width: 100%;
     border-radius: 5px;
-    max-height: 40vh;
+    max-height: 20vh;
     overflow-y: auto;
   }
 
@@ -232,3 +233,33 @@ body {
     flex-direction: column;
     overflow: auto;
   }
+
+  #popup {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 20%;
+    position: absolute; /* Change position to absolute */
+    top: 40%; /* Adjust top position as needed */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -30%); /* Center horizontally and vertically */
+    width: 20%;
+    height: 5%;
+    padding: 15% 1%;
+    z-index: 2;
+    border-radius: 10px;
+    font-size:20px;
+    visibility:hidden;
+  }
+
+  #attempts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size:40px;
+    margin: 5vh;
+  }
+  
