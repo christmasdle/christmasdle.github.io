@@ -1,14 +1,4 @@
-function createSnowflake() {
-    const snowflake = document.createElement('div');
-    snowflake.className = 'snowflake';
-    snowflake.innerHTML = '❄';
-    snowflake.style.left = Math.random() * window.innerWidth + 'px';
-    snowflake.style.top = Math.random() * window.innerHeight + 'px';
-    document.getElementById('snowflakes').appendChild(snowflake);
-  }
-  for (let i = 0; i < 75; i++) {
-    createSnowflake();
-  }
+
   
   function selectOption(option) {
     var dropdown = document.getElementById('dropdown');
