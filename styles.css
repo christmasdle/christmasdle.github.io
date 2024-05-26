@@ -48,6 +48,7 @@ body {
     text-align: center;
     font-size:20px;
     color: white;
+    transform: translate(0, 40%);
   }
   
 
@@ -263,11 +264,4 @@ body {
     margin: 5vh;
   }
  
-@media (max-width: 768px) {
-  #popup {
-      width: 80%; /* Adjust width for smaller screens */
-      padding: 10% 3%; /* Adjust padding for smaller screens */
-      font-size: 16px; /* Reduce font size for better readability */
-  }
-}
   
