@@ -1,5 +1,5 @@
 body, html {
-  height: -webkit-fill-available;
+  height: 100%;
   margin: 0;
   overflow: hidden;
   display: flex;
@@ -8,7 +8,7 @@ body, html {
 
 body {
     background-image: linear-gradient(to bottom left, #196da5, #60a3cf);
-    height: -webkit-fill-available;
+    height: 100%;
   }
   
   #container {
@@ -199,7 +199,7 @@ body {
     z-index: 1;
     width: 100%;
     border-radius: 5px;
-    max-height: 20vh;
+    max-height: 30vh;
     overflow-y: auto;
   }
 
